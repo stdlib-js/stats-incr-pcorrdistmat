@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-pcorrdistmat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Compute a sample Pearson product-moment correlation distance matrix incrementally.",
   "license": "Apache-2.0",
   "author": {
