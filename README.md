@@ -20,7 +20,7 @@ limitations under the License.
 
 # incrpcorrdistmat
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute a [sample Pearson product-moment correlation distance matrix][pearson-correlation] incrementally.
 
@@ -219,8 +219,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]: compute a sample Pearson product-moment correlation distance.
--   [`@stdlib/stats/incr/pcorrmat`][@stdlib/stats/incr/pcorrmat]: compute a sample Pearson product-moment correlation matrix incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation distance.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/pcorrmat`][@stdlib/stats/incr/pcorrmat]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation matrix incrementally.</span>
 
 </section>
 
@@ -271,8 +271,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-pcorrdistmat/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-pcorrdistmat?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-incr-pcorrdistmat.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-incr-pcorrdistmat/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
