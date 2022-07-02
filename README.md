@@ -72,7 +72,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.incrpcorrdistmat;
+})();
 })();
 </script>
 ```
@@ -195,6 +197,7 @@ out = accumulator();
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var dist;
 var dxy;
@@ -227,6 +230,7 @@ for ( i = 0; i < 100; i++ ) {
     console.log( '[ %d, %d\n  %d, %d ]', dx, dxy, dyx, dy );
 }
 
+})();
 })();
 </script>
 </body>
@@ -323,13 +327,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [pearson-correlation]: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/pcorrdist]: https://github.com/stdlib-js/stats-incr-pcorrdist/tree/umd
+[@stdlib/stats/incr/pcorrdist]: https://github.com/stdlib-js/stats-incr-pcorrdist/tree/umd/tree/umd
 
-[@stdlib/stats/incr/pcorrmat]: https://github.com/stdlib-js/stats-incr-pcorrmat/tree/umd
+[@stdlib/stats/incr/pcorrmat]: https://github.com/stdlib-js/stats-incr-pcorrmat/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
