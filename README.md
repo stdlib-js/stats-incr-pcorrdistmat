@@ -30,10 +30,14 @@ A [sample Pearson product-moment correlation distance matrix][pearson-correlatio
 
 <!-- <equation class="equation" label="eq:pearson_distance" align="center" raw="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" alt="Equation for the Pearson product-moment correlation distance."> -->
 
-<div class="equation" align="center" data-raw-text="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" data-equation="eq:pearson_distance">
+```math
+d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" data-equation="eq:pearson_distance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@49d8cabda84033d55d7b8069f19ee3dd8b8d1496/lib/node_modules/@stdlib/stats/incr/pcorrdistmat/docs/img/equation_pearson_distance.svg" alt="Equation for the Pearson product-moment correlation distance.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -227,8 +231,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation distance.</span>
--   <span class="package-name">[`@stdlib/stats/incr/pcorrmat`][@stdlib/stats/incr/pcorrmat]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation matrix incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation distance.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/pcorrmat`][@stdlib/stats/incr/pcorrmat]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation matrix incrementally.</span>
 
 </section>
 
@@ -287,7 +291,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
