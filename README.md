@@ -58,19 +58,30 @@ where `r` is the [sample Pearson product-moment correlation coefficient][pearson
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-pcorrdistmat
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-pcorrdistmat/tags). For example,
-
-```javascript
-import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@v0.1.0-deno/mod.js';
+var incrpcorrdistmat = require( '@stdlib/stats-incr-pcorrdistmat' );
 ```
 
 #### incrpcorrdistmat( out\[, means] )
@@ -85,8 +96,8 @@ var accumulator = incrpcorrdistmat( 2 );
 The `out` argument may be either the order of the [correlation distance matrix][pearson-correlation] or a square 2-dimensional [`ndarray`][@stdlib/ndarray/ctor] for storing the [correlation distance matrix][pearson-correlation].
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 var buffer = new Float64Array( 4 );
 var shape = [ 2, 2 ];
@@ -101,8 +112,8 @@ var accumulator = incrpcorrdistmat( dist );
 When means are known, the function supports providing a 1-dimensional [`ndarray`][@stdlib/ndarray/ctor] containing mean values.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 var buffer = new Float64Array( 2 );
 var shape = [ 2 ];
@@ -121,8 +132,8 @@ var accumulator = incrpcorrdistmat( 2, means );
 If provided a data vector, the accumulator function returns an updated [sample Pearson product-moment distance correlation matrix][pearson-correlation]. If not provided a data vector, the accumulator function returns the current [sample Pearson product-moment correlation distance matrix][pearson-correlation].
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 var buffer = new Float64Array( 4 );
 var shape = [ 2, 2 ];
@@ -182,10 +193,10 @@ out = accumulator();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var Float64Array = require( '@stdlib/array-float64' );
+var incrpcorrdistmat = require( '@stdlib/stats-incr-pcorrdistmat' );
 
 var dist;
 var dxy;
@@ -247,7 +258,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -277,8 +288,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-incr-pcorrdistmat.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-incr-pcorrdistmat
 
-[test-image]: https://github.com/stdlib-js/stats-incr-pcorrdistmat/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/stats-incr-pcorrdistmat/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/stats-incr-pcorrdistmat/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-incr-pcorrdistmat/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-pcorrdistmat/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-pcorrdistmat?branch=main
@@ -309,13 +320,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [pearson-correlation]: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/pcorrdist]: https://github.com/stdlib-js/stats-incr-pcorrdist/tree/deno
+[@stdlib/stats/incr/pcorrdist]: https://github.com/stdlib-js/stats-incr-pcorrdist
 
-[@stdlib/stats/incr/pcorrmat]: https://github.com/stdlib-js/stats-incr-pcorrmat/tree/deno
+[@stdlib/stats/incr/pcorrmat]: https://github.com/stdlib-js/stats-incr-pcorrmat
 
 <!-- </related-links> -->
 
