@@ -65,7 +65,7 @@ where `r` is the [sample Pearson product-moment correlation coefficient][pearson
 ## Usage
 
 ```javascript
-import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@esm/index.mjs';
+import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@v0.2.2-esm/index.mjs';
 ```
 
 #### incrpcorrdistmat( out\[, means] )
@@ -185,7 +185,7 @@ out = accumulator();
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@esm/index.mjs';
+import incrpcorrdistmat from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdistmat@v0.2.2-esm/index.mjs';
 
 var dist;
 var dxy;
